@@ -5,8 +5,27 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/TextView"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:text="Isso é uma TextView" />
+
+    <EditText
+        android:id="@+id/EditTextView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Digite seu texto"/>
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Clique aqui!!!"/>
 
 </LinearLayout>

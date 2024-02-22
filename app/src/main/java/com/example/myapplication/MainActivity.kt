@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 
@@ -17,7 +18,12 @@ class MainActivity : ComponentActivity() {
 
         setContentView(binding.root)
 
+        binding.button.setOnClickListener{
+            binding.TextView.text = binding.EditTextView.text
+        }
 
+        binding.ImageView.setOnClickListener {
+            Toast.makeText(this, "clicou na imagem", Toast.LENGTH_LONG).show()
+        }
     }
 }
-
